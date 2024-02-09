@@ -29,10 +29,10 @@ SECRET_KEY = 'django-insecure-$^j8^-l85pi(qw2@((ln%%)=t5h)oi$k3x=ngqfe+j&uxmt_#h
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['https://flower-shop-s96m.onrender.com/','https://*.127.0.0.1']
-
+CSRF_TRUSTED_ORIGINS = ['https://flower-shop-s96m.onrender.com','https://*.127.0.0.1']
 # ALLOWED_HOSTS = ["*"]
 # CSRF_TRUSTED_ORIGINS = ['https://smart-care.onrender.com','https://*.127.0.0.1']
+ 
 
 
 
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "corsheaders",
     'rest_framework',
     'rest_framework.authtoken',
     'category',
@@ -159,4 +160,4 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = env("EMAIL")
 EMAIL_HOST_PASSWORD = env("EMAIL_PASSWORD")
 
-CORS_ALLOW_ALL_ORIGINS=True
+CORS_ALLOW_ALL_ORIGINS = True
