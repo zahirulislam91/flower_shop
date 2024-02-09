@@ -5,7 +5,7 @@ from . import views
 
 # Create a router and register our ViewSets with it.
 router = DefaultRouter()
-router.register('order', views.OrderViewSet)
+router.register('order_list', views.OrderViewSet)
 
 
 urlpatterns = [
