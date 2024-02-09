@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'customer',
     'order',
     'products',
-    "corsheaders",
+    
 ]
 
 MIDDLEWARE = [
